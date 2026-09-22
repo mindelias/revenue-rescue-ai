@@ -1,0 +1,91 @@
+import { Proposal } from '@/types/proposal';
+
+export const INITIAL_PROPOSALS: Proposal[] = [
+  {
+    id: 'prop-301',
+    opportunityId: 'opp-102',
+    opportunityTitle: 'Multi-Cloud Infrastructure Automation',
+    clientCompany: 'FinPulse Payments',
+    title: 'Enterprise Architecture & Multi-Cloud Infrastructure Automation Agreement',
+    version: 'v2.1-Executive',
+    totalValue: 185000,
+    status: 'VIEWED',
+    createdAt: '2026-09-12',
+    expiresAt: '2026-10-02',
+    templateType: 'ENTERPRISE_SaaS',
+    rescueWarning: 'Viewed 24 times without signature; procurement pricing objection active',
+    engagement: {
+      totalViews: 24,
+      lastViewedAt: '2026-09-21 16:45',
+      avgTimeSpentMinutes: 8.4,
+      mostViewedSection: 'Commercial Terms & SLA Pricing',
+      pricingViewedCount: 16,
+    },
+    sections: [
+      {
+        id: 'sec-1',
+        title: 'Executive Summary',
+        isAiGenerated: true,
+        content: 'FinPulse Payments requires high-resiliency multi-cloud telemetry to eliminate latency spikes across 4.2M daily transactions. Revenue Rescue AI deployment guarantees sub-10ms monitoring and reduces infrastructure downtime by 99.99%.',
+      },
+      {
+        id: 'sec-2',
+        title: 'Scope of Work & Deliverables',
+        isAiGenerated: true,
+        content: '• Phase 1: Automated Agent Deployment across AWS & GCP clusters (Days 1–14)\n• Phase 2: Live Traffic Telemetry & AI Anomaly Detection Engine (Days 15–30)\n• Phase 3: Executive Dashboard & Incident Response Playbooks (Days 31–45)',
+      },
+      {
+        id: 'sec-3',
+        title: 'Commercial Terms & SLA Pricing',
+        isAiGenerated: false,
+        content: 'Annual Platform License: $160,000 / year (Billed Annually)\nDedicated Technical Account Manager: $25,000 / year\nTotal Investment: $185,000 ARR\nService Level Agreement: 99.99% Guaranteed Uptime with 15-min Critical Incident Response.',
+      },
+      {
+        id: 'sec-4',
+        title: 'Security, SOC2 & Compliance',
+        isAiGenerated: false,
+        content: 'Enterprise end-to-end AES-256 encryption at rest and in transit. Annual SOC 2 Type II audit report available under mutual NDA. Zero proprietary data used for model retraining.',
+      },
+    ],
+  },
+  {
+    id: 'prop-302',
+    opportunityId: 'opp-104',
+    opportunityTitle: 'Real-Time Fraud Telemetry Core',
+    clientCompany: 'Vanguard Mutual Insurance',
+    title: 'AI Real-Time Fraud Telemetry & Risk Mitigation Partnership',
+    version: 'v1.0-Final',
+    totalValue: 150000,
+    status: 'SENT',
+    createdAt: '2026-09-19',
+    expiresAt: '2026-10-19',
+    templateType: 'FINANCIAL_INTELLIGENCE',
+    engagement: {
+      totalViews: 6,
+      lastViewedAt: '2026-09-20 11:20',
+      avgTimeSpentMinutes: 5.2,
+      mostViewedSection: 'Executive Summary',
+      pricingViewedCount: 3,
+    },
+    sections: [
+      {
+        id: 'sec-201',
+        title: 'Executive Summary',
+        isAiGenerated: true,
+        content: 'Vanguard Mutual Insurance handles over $800M in annual claims. This engagement deploys real-time neural anomaly detection to catch policy manipulation before settlement payout.',
+      },
+      {
+        id: 'sec-202',
+        title: 'Technical Milestones',
+        isAiGenerated: true,
+        content: 'Seamless webhook integration with core claims management database. Real-time inference latency < 45ms per claim evaluation.',
+      },
+      {
+        id: 'sec-203',
+        title: 'Pricing & Pilot Retainer',
+        isAiGenerated: false,
+        content: 'Annual Subscription: $150,000 / year for unlimited claim evaluations and quarterly model tuning.',
+      },
+    ],
+  },
+];
