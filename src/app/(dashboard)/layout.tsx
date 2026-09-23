@@ -19,8 +19,8 @@ export default function DashboardLayout({
         {/* Topbar with Mobile Hamburger Drawer */}
         <Topbar />
 
-        {/* Dynamic Page Content with Suspense Boundary */}
-        <main className="flex-1 pt-20 p-4 sm:p-6 lg:p-8 max-w-[1500px] w-full mx-auto">
+        {/* Dynamic Page Content with Generous Topbar Clearance */}
+        <main className="flex-1 pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-[1600px] w-full mx-auto">
           <Suspense
             fallback={
               <div className="h-96 flex items-center justify-center">
