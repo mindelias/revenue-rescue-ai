@@ -8,17 +8,19 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-[#08090d] flex">
-      {/* Stationed Persistent Sidebar Navigation */}
-      <Sidebar />
+    <div className="min-h-screen bg-[#07080b] flex text-slate-100 selection:bg-emerald-500/30 selection:text-emerald-200">
+      {/* Desktop Stationed Persistent Sidebar (hidden on mobile) */}
+      <div className="hidden lg:block">
+        <Sidebar />
+      </div>
 
-      {/* Main App Container */}
-      <div className="flex-1 flex flex-col pl-64 min-w-0">
-        {/* Stationed Persistent Topbar */}
+      {/* Main Container */}
+      <div className="flex-1 flex flex-col pl-0 lg:pl-64 min-w-0 w-full overflow-x-hidden">
+        {/* Topbar with Mobile Hamburger Drawer */}
         <Topbar />
 
         {/* Dynamic Page Content with Suspense Boundary */}
-        <main className="flex-1 pt-16 p-6 md:p-8 max-w-[1600px] w-full mx-auto">
+        <main className="flex-1 pt-20 p-4 sm:p-6 lg:p-8 max-w-[1500px] w-full mx-auto">
           <Suspense
             fallback={
               <div className="h-96 flex items-center justify-center">
